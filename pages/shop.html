@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Funkoshop</title>
+    <title>SHOP | Funkoshop</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -42,7 +42,7 @@
       <!-- Inicio Aside -->
 
       <section>
-        <form action="">
+        <form autocomplete="off">
           <div>
             <label for="buscar"><h4>Buscar</h4></label>
             <input type="text" name="buscar" placeholder="item o categoria" />
@@ -50,43 +50,49 @@
           </div>
 
           <div>
-            <label for="ordenar"><h4>Ordenar por</h4></label>
-            <select name="ordenar" id="">
-              <option value="mayor">Mayor a menor</option>
-              <option value="menor">Menor a mayor</option>
-            </select>
+            <form autocomplete="off">
+              <label for="ordenar"><h4>Ordenar por</h4></label>
+              <select name="ordenar" id="">
+                <option value="mayor">Mayor a menor</option>
+                <option value="menor">Menor a mayor</option>
+              </select>
+          </form>
           </div>
 
           <div>
             <h4>Precio</h4>
             <div>
-              <span>Min</span>
-              <input type="number" name="" id="" placeholder="0" />
-              <span> - </span>
-              <span>Max</span>
-              <input type="number" name="" id="" placeholder="0" />
+              <form autocomplete="off">
+                <span>Min</span>
+                <input type="number" name="" id="" placeholder="0" />
+                <span> - </span>
+                <span>Max</span>
+                <input type="number" name="" id="" placeholder="0" />
+              </form> 
             </div>
           </div>
 
           <div>
-            <h4>Filtrar</h4>
-            <div>
-              <input type="checkbox" name="" id="" value="nuevos" />
-              <!--para que al hacer click en el label vaya al input agregar id con mismo nombre que for-->
-              <label for="">NUEVOS</label>
-            </div>
-            <div>
-              <input type="checkbox" name="" id="" value="ofertas" />
-              <label for="">OFERTAS</label>
-            </div>
-            <div>
-              <input type="checkbox" name="" id="" value="edicionEspecial" />
-              <label for="">EDICIÓN ESPECIAL</label>
-            </div>
-            <div>
-              <input type="checkbox" name="" id="" value="favoritos" />
-              <label for="">FAVORITOS</label>
-            </div>
+            <form autocomplete="off">
+              <h4>Filtrar</h4>
+              <div>
+                <input type="checkbox" name="" id="" value="nuevos" />
+                <!--para que al hacer click en el label vaya al input agregar id con mismo nombre que for-->
+                <label for="">NUEVOS</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" value="ofertas" />
+                <label for="">OFERTAS</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" value="edicionEspecial" />
+                <label for="">EDICIÓN ESPECIAL</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" value="favoritos" />
+                <label for="">FAVORITOS</label>
+              </div>
+            </form> 
           </div>
         </form>
       </section>
