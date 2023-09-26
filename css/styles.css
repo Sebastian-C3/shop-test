@@ -524,6 +524,7 @@ header{
 
 .cart{
     margin-top: var(--spacing-68);
+    margin-bottom: var(--spacing-128);
     display: flex;
     flex-direction: column;
 }
@@ -673,20 +674,30 @@ header{
 
 .form__container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--spacing-24);
 }
 
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
 }
 
 .form__title{
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 700;
-    margin: var(--spacing-36) 0 var(--spacing-16) 0;
+    margin: var(--spacing-28) 0;
+}
+
+.form__subtitle{
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    margin-bottom: var(--spacing-20);
 }
 
 .form__sub {
@@ -694,6 +705,20 @@ header{
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
     margin: var(--spacing-16) 0 var(--spacing-16) 0;
+    /* width: 100%; */
+}
+
+.form__subtn {
+    display: flex;
+    /* grid-template-columns: 25% 1fr; */
+    gap: 1.2rem;
+    margin: var(--spacing-16) 0 var(--spacing-16) 0;
+    /* width: 100%; */
+    align-items: center;
+}
+
+.sub{
+    width: 100%;
 }
 
 .form__label{
@@ -716,7 +741,8 @@ header{
 .form__btn {
     background-color: var(--primary-solid);
     color: var(--ligth-font-solid);
-    padding: 1.2rem 3.6rem;
+    height: 3.9rem;
+    width: 10.3rem;
     border: none;
     font-size: var(--font-xsmal);
     cursor: pointer;
@@ -731,6 +757,10 @@ header{
     font-size: var(--font-medium);
 }
 
+.form__lchk a{
+    color:var(--secondary-solid)
+}
+
 .form__chk{
     width: var(--spacing-20);
     height: var(--spacing-20);
@@ -738,6 +768,12 @@ header{
 }
 
 .form__sub div{
+    display: flex;
+    align-items: center;
+    gap:var(--spacing-8)
+}
+
+.form__subtn div{
     display: flex;
     align-items: center;
     gap:var(--spacing-8)
@@ -754,7 +790,7 @@ header{
 
 /* FOOTER */
 .footer{
-    margin-top: var(--spacing-128);
+    /* margin-top: var(--spacing-128); */
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
 }
