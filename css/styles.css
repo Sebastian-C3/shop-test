@@ -670,7 +670,7 @@ header{
     background-color: var(--dark-solid);
 }
 
-/* Login */
+/* Login - Register */
 
 .form__container{
     display: flex;
@@ -683,7 +683,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 40%; */
 }
 
 .form__title{
@@ -703,7 +702,6 @@ header{
 .form__sub {
     display: flex;
     justify-content: space-between;
-    /* grid-template-columns: 1fr 1fr; */
     gap: var(--spacing-12);
     margin: var(--spacing-16) 0 var(--spacing-16) 0;
     width: 100%;
@@ -718,16 +716,15 @@ header{
 
 .form__subtn {
     display: flex;
-    /* grid-template-columns: 25% 1fr; */
     gap: 1.2rem;
     margin: var(--spacing-16) 0 var(--spacing-16) 0;
-    /* width: 100%; */
     align-items: center;
 }
 
-/* .sub{ */
-    /* width: 100%; */
-/* } */
+.form__subtn a{
+    font-size: var(--font-xsmal);
+    color: var(--secondary-solid);
+}
 
 .form__label{
     font-size: var(--font-large);
@@ -761,10 +758,6 @@ header{
     background-color: var(--dark-solid);
 }
 
-/* .form__lchk { */
-    /* font-size: var(--font-medium); */
-/* } */
-
 .form__lchk a{
     color:var(--secondary-solid)
 }
@@ -774,25 +767,6 @@ header{
     height: var(--spacing-20);
     cursor: pointer;
 }
-
-/* .form__sub div{ */
-    /* display: flex; */
-    /* align-items: center; */
-    /* gap:var(--spacing-8) */
-/* } */
-
-.form__subtn div{
-    display: flex;
-    align-items: center;
-    gap:var(--spacing-8)
-}
-
-/* .form__sub a{ */
-    /* grid-column: span 2; */
-    /* font-size: var(--font-small); */
-    /* color: var(--secondary-solid); */
-    /* cursor: pointer; */
-/* } */
 
 
 /* ADMIN */
